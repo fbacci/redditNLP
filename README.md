@@ -1,7 +1,7 @@
 # redditNLP
 
 ## What is this?
-The **redditNLP** project is the implementation of a telegram bot which is able to classify a reddit post, given its url, in the correct or most suitable subreddit based on the text content. The dataset used to train the classfier is [this](https://www.kaggle.com/mswarbrickjones/reddit-selfposts). Before developing the classifier and the bot, the dataset has been put to a series of preprocessing functions, in order to reduce the dimensionality and to normalize the text of the examples it contains. In particular, only a subset of subreddit has been chose for the training, starting from a total of 1000 subreddit to a subset of 300 elements, and the text of each post has been cut to 550 characters, in order to speed up the execution.
+The **redditNLP** project is the implementation of a telegram bot which is able to classify a reddit post, given its url, in the correct or most suitable subreddit based on the text content. The dataset used to train the classfier is [this](https://www.kaggle.com/mswarbrickjones/reddit-selfposts). Before developing the classifier and the bot, the dataset has been preprocessed using a series of functions, in order to reduce the dimensionality and to normalize the text of the examples it contains. In particular, only a subset of subreddit has been chose for the training, starting from a total of 1000 subreddit to a subset of 300 elements, and the text of each post has been cut to 550 characters, in order to speed up the execution.
 
 This github project contains the version of the classifier implemented using *TF-IDF* and *Naive Bayes*. Out of all the implementations, this one was the most performing one.
 The other implementations can be found in the [Google colab notebook](https://colab.research.google.com/drive/1JnbyLIioYVlLbxNfEX0ZXEUKF_ccyGG5?usp=sharing) I used to implement and test all the system. It also includes a brief evaluation table with the accuracy, precision and recall values for all the developed implementations.
@@ -20,11 +20,11 @@ This project is composed by 4 main files:
 - **reddit.py**: contains the tokens for the reddit API.
 
 ## How to run redditNLP
-### Resources needed for the bot:
+### Packages needed for the bot:
 - python-telegram-bot
 - PRAW
 
-### Resources needed for the classification task
+### Packages needed for the classification task
 - pandas
 - nltk
 - sklearn
